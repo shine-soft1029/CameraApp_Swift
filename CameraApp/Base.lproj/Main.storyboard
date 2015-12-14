@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="week3Application" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IhB-ly-iMZ">
+                                <rect key="frame" x="50" y="28" width="266" height="332"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qPC-jb-4jR">
+                                <rect key="frame" x="135" y="421" width="84" height="84"/>
+                                <animations/>
+                                <state key="normal" image="video.png"/>
+                                <connections>
+                                    <action selector="onClickVideoCamera:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6GT-ro-QjU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wtt-zt-kEV">
+                                <rect key="frame" x="254" y="421" width="84" height="84"/>
+                                <animations/>
+                                <state key="normal" image="galeryPhoto.png"/>
+                                <connections>
+                                    <action selector="onClickPhotoLibrary:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6KY-GK-yzp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="caB-yg-SNp">
+                                <rect key="frame" x="25" y="421" width="84" height="84"/>
+                                <animations/>
+                                <state key="normal" image="camera-shutter-128.png"/>
+                                <connections>
+                                    <action selector="onClickPhotoCamera:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DRj-kj-mNA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="myImageView" destination="IhB-ly-iMZ" id="uXn-iO-vco"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="287.5" y="333.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="camera-shutter-128.png" width="128" height="128"/>
+        <image name="galeryPhoto.png" width="128" height="128"/>
+        <image name="video.png" width="128" height="128"/>
+    </resources>
+</document>
